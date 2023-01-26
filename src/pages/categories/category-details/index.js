@@ -1,7 +1,6 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 function CategoryDetails() {
-  const { id } = useParams();
   const category = useLoaderData();
   const { name, phone, website } = category;
   return (

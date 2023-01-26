@@ -1,5 +1,3 @@
-import About from "pages/about/index";
-
 function Home() {
   return (
     <>
