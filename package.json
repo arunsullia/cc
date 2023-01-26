@@ -1,6 +1,6 @@
 {
-  "name": "cc-home",
-  "homepage": "https://arunsullia.github.io/cc-home",
+  "name": "cc",
+  "homepage": "https://arunsullia.github.io/cc",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
