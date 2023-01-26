@@ -1,6 +1,7 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
+  Navigate,
   Route,
   RouterProvider,
 } from "react-router-dom";
@@ -29,7 +30,8 @@ import { categoryDetailsLoader } from "loaders/categoryDetailsLoader";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
+      <Route index element={<Navigate to="/cc-home" />} />
+      <Route path="/cc-home" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="help" element={<HelpLayout />}>
         <Route path="faq" element={<FAQ />} />
@@ -47,7 +49,7 @@ const router = createBrowserRouter(
           loader={categoryDetailsLoader}
         />
       </Route>
-      <Route path="*" element={<PageNotFound />} />
+      <Route path="/*" element={<PageNotFound />} />
     </Route>
   )
 );
